@@ -642,4 +642,121 @@ form input:placeholder-shown {
         width: 100%;
     }
 }    
+
+   
+/*/////////////////////////////////////////*/
+/*//////////  MEDIA QUERIES - TABLETTE ////*/
+/*////////////////////////////////////////*/
+
+@media all and (min-width: 465px) and (max-width: 1023px){
+    body{
+        margin: auto;
+        font-size: 0.8rem;
+        width: 95%;
+    }
+    /*HEADER TABLETTE*/
+    .header{
+        display: none;
+    }
+    .header-mobile{
+        display: contents;
+        margin: 10px;
+    }
+    #nav1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    #nav2{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .header-mobile #nav2 li{
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px solid #f2f2f2;
+        margin: 0;
+        padding: 10px;
+    }
+    #inscription{
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #0065FC;
+    }
+    #inscription:hover{
+        background-color: #0065FC;
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .header-mobile ul {
+        display: flex;
+        list-style-type: none;
+    }
+    .header-mobile nav li
+    {
+        margin-right: 20px;
+    }
+    .header-mobile #nav2 a {
+        font-size: 1.1rem;
+        color: #000;
+    }
+    .header-mobile #nav2 li:hover
+    {
+        color:  #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+    /*HEBERGEMENTS*/
+    main{
+        padding: 10px;
+    }
+    .hebergement{
+        flex-direction: row;
+    }
+    .hebergement-results{
+        width: 50%;
+        margin: 10px;
+        flex-flow: column;
+    }
+    .hebergement-populars{
+        width: 50%;
+        height: auto;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin: 10px;
+    }
+    .hebergement-populars h1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin:  0;
+     }
+    /*activities*/
+    .activities{
+        flex-direction: column;
+        height: auto;
+    }
+    .activities1{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        margin: 20px 0;
+        flex-shrink: 1;
+    }
+    .activities2{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-shrink: 1;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+}
+ 
     
