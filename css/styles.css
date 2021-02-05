@@ -82,3 +82,117 @@ main, .header{
     border-top: 3px solid #0065FC;
     padding-top: 30px;
 }
+/*//////////////////////////*/
+/*// SEARCH SECTION ///////*/
+/*////////////////////////*/
+main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1000px;
+}
+.form {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+form .fas{
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+    border: 3px solid #f2f2f2;
+    cursor: pointer;
+}
+form input[type=text]{
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; 
+    border-left: none;
+    border-right: none;
+    width: 200px; 
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+form input[type="text"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+form input:placeholder-shown {
+    font-weight: lighter;
+}
+.fa-map-marker-alt{
+    cursor: pointer;
+}
+.btn-search{
+    padding: 10px;
+    background-color: #0065FC;
+    border: 1px solid #ddd;
+    color: #fff;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+.btn-search:hover{
+    background-color: #0b7dda;
+}
+.btn-search-mobile{
+    display: none;
+}
+.filtres{
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    align-items: baseline;
+}
+.filtres p{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+} 
+.btn-filtres{
+    font-weight: bold;
+    margin-left: 25px;
+    border: 2px solid #ddd;
+    border-radius: 80px;
+    background: transparent;
+    padding-right: 20px;
+    font-size: 1.1rem;
+    text-transform: none;
+    display: flex;
+    flex-wrap: row nowrap;
+    align-items: baseline;
+    margin: 10px;
+}
+.btn-filtres .fas{
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 12.5px; 
+    margin-left: -5px;
+    margin-right: 15px;
+}
+.btn-filtres .dog{
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    font-size: auto;
+}
+.btn-filtres:hover .fas{
+    background-color: #0065FC;
+    color: #fff;
+    
+} .btn-filtres:hover {
+    border-color: #DEEBFF;
+    background-color: #DEEBFF; 
+    color:#0065FC;
+}
+.fa-info-circle{
+    background-color: #fff;
+    color: #0065FC;
+    border-color: #f2f2f2;
+}
