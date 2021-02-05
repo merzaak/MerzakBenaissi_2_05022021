@@ -631,7 +631,7 @@ form input:placeholder-shown {
     .activities1 .second{
         width: 300px;
         height: auto;
-        flex-grow: 0;
+        flex-grow: 1;
     }
     .activities1 .second .activities_card-img{
         height: 150px;
