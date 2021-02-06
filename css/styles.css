@@ -465,7 +465,7 @@ form input:placeholder-shown {
         font-size: 0.8rem;
     }
     main{
-        padding: 0 2%;
+        padding: 0;
         width: 100%;
     }
 /*HEADER MOBILE*/
@@ -529,6 +529,9 @@ form input:placeholder-shown {
         border-bottom: 3px solid #0065FC;
     }
      /*search button*/
+     .search{
+         padding: 2%;
+     }
      .form{
         max-width: 250px;
         margin: 20px auto;
@@ -594,9 +597,14 @@ form input:placeholder-shown {
         margin: 10px 0;
     }
      /*activities*/
+     #activity{
+         padding: 2%;
+         width: 90%;
+         margin: auto;
+     }
      .activities{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         margin: 20px auto;
         padding: 0;
         height: auto;
