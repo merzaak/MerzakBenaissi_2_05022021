@@ -90,28 +90,34 @@ main {
     display: flex;
     flex-direction: column;
     flex-basis: 1000px;
+    padding: 0 1%;
 }
 .form {
     display: flex;
-    flex-wrap: nowrap;
-    padding: 0px;
-    margin: 10px 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 20px 0;
+    max-width: 340px;
+    height: auto;
 }
-form .fas{
-    padding: 10px;
-    background-color: #ddd;
+form label{
+    width: 12.5%;
+    padding: 12.5px;
+    background-color: #f2f2f2;
     border-bottom-left-radius: 25%;
     border-top-left-radius: 25%;
-    border: 3px solid #f2f2f2;
+    border: 1px solid #f2f2f1;
     cursor: pointer;
+    border-right: none;
+    font-size: 1rem;
 }
 form input[type=text]{
-    padding: 0 10px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd; 
+    width: 55%;
+    padding: 12.5px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2; 
     border-left: none;
     border-right: none;
-    width: auto; 
     font-size: 1rem;
     font-weight: bold;
     color: #000;
@@ -125,14 +131,15 @@ form input:placeholder-shown {
     cursor: pointer;
 }
 .btn-search{
-    padding: 10px;
+    width: 32.5%;
+    padding: 12.5px;
     background-color: #0065FC;
-    border: 1px solid #ddd;
+    border: none;
     color: #fff;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     cursor: pointer;
-    font-weight: bold;
+    font-size: 1rem;
 }
 .btn-search:hover{
     background-color: #1986df;
@@ -458,7 +465,7 @@ form input:placeholder-shown {
         font-size: 0.8rem;
     }
     main{
-        padding: 0;
+        padding: 0 2%;
         width: 100%;
     }
 /*HEADER MOBILE*/
@@ -468,6 +475,7 @@ form input:placeholder-shown {
     .header-mobile{
         display: contents;
         margin: 10px;
+        padding: 2%;
     }
     #nav1{
         display: flex;
@@ -521,24 +529,33 @@ form input:placeholder-shown {
         border-bottom: 3px solid #0065FC;
     }
      /*search button*/
+     .form{
+        max-width: 250px;
+        margin: 20px auto;
+     }
+     form label{
+         width: 20%;
+         font-size: 0.8rem;
+     }
+     form input[type=text]{
+         width: 60%;
+     }
     .btn-search{
         display: none;
     }
     .btn-search-mobile{
         display: contents;
+        width: 20%;
+        font-size: 0.8rem;
     }
     .btn-search-mobile .fa-search{
         background-color: #0065FC;
         color: #fff;
-        border: 0;
         border-radius: 10px;
-        padding: 10px;
-        width: 38.8px;
-        height: 38.8px;
+        padding: 12.5px;
         cursor: pointer;
-        margin-left: -8px;
+        margin-left: -12px;
         text-align: center;
-        font-size: 0.8rem;
     }
     .btn-search-mobile:hover{
         background-color: #1986df;
