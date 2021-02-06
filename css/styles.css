@@ -9,19 +9,20 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    display:flex;
-    margin: 0 5%;
-    padding: 0;
-    flex-direction: column;
     min-height: 100vh;
 }
+.container{
+    display:flex;
+    margin: 0 5%;
+    flex-direction: column;
+}
 h1, h2, h3, h4 {
-    margin: 5px;
+    margin: 10px 0;
     padding: 0 5px;
 }
 p{
     padding: 0 5px;
-    margin: 0 5px;
+    margin: 5px 0;
 }
 img {
     object-fit: cover;
@@ -93,32 +94,29 @@ main {
 .form {
     display: flex;
     flex-wrap: nowrap;
-    padding: 20px;
+    padding: 0px;
+    margin: 10px 0;
 }
 form .fas{
     padding: 10px;
-    background-color: #f2f2f2;
+    background-color: #ddd;
     border-bottom-left-radius: 25%;
     border-top-left-radius: 25%;
     border: 3px solid #f2f2f2;
     cursor: pointer;
 }
 form input[type=text]{
-    padding: 10px;
+    padding: 0 10px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd; 
     border-left: none;
     border-right: none;
-    width: 200px; 
+    width: auto; 
     font-size: 1rem;
     font-weight: bold;
     color: #000;
     font-family: 'Raleway', sans-serif;
-}
-form input[type="text"] {
     appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
 }
 form input:placeholder-shown {
     font-weight: lighter;
@@ -134,9 +132,10 @@ form input:placeholder-shown {
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     cursor: pointer;
+    font-weight: bold;
 }
 .btn-search:hover{
-    background-color: #0b7dda;
+    background-color: #1986df;
 }
 .btn-search-mobile{
     display: none;
@@ -155,38 +154,37 @@ form input:placeholder-shown {
     font-size: 1.1rem;
 } 
 .btn-filtres{
-    font-weight: bold;
-    margin-left: 25px;
-    border: 2px solid #ddd;
-    border-radius: 80px;
-    background: transparent;
-    padding-right: 20px;
-    font-size: 1.1rem;
-    text-transform: none;
     display: flex;
     flex-flow: row nowrap;
     align-items: baseline;
+    font-weight: bold;
+    border: 2px solid #ddd;
+    border-radius: 80px;
+    background: #fff;
     margin: 10px;
+    padding-right: 15px;
+    
+    font-size: 1.1rem;
+    text-transform: none;
 }
 .btn-filtres .fas{
     border-radius: 50%;
     background-color: #DEEBFF;
     color: #0065FC;
-    padding: 12.5px; 
+    padding: 10px;
     margin-left: -5px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .btn-filtres .dog{
     display: flex;
     flex-flow: row nowrap;
-    font-size: auto;
 }
 .btn-filtres:hover .fas{
     background-color: #0065FC;
     color: #fff;
     
 } .btn-filtres:hover {
-    border-color: #DEEBFF;
+    border-color: #fff;
     background-color: #DEEBFF; 
     color:#0065FC;
 }
@@ -440,7 +438,7 @@ form input:placeholder-shown {
     justify-content: flex-start;
     width: 100%;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #f2f2f2;
 }
 .footer div{
@@ -454,8 +452,8 @@ form input:placeholder-shown {
 /*////////////////////////////////////////*/
 /*//////////  MEDIA QUERIES - MOBILE  ////*/
 /*////////////////////////////////////////*/
-@media all and (max-device-width: 464px){
-    body{
+@media all and (max-width: 464px){
+    .container{
         margin: auto;
         font-size: 0.8rem;
     }
@@ -515,7 +513,6 @@ form input:placeholder-shown {
         text-align: center;
     }
     .header-mobile #nav2 a {
-        font-size: 1.1rem;
         color: #000;
     }
     .header-mobile #nav2 li:hover
@@ -539,10 +536,23 @@ form input:placeholder-shown {
         width: 38.8px;
         height: 38.8px;
         cursor: pointer;
-        margin-left: -5px;
+        margin-left: -8px;
+        text-align: center;
+        font-size: 0.8rem;
     }
     .btn-search-mobile:hover{
-        background-color: #0b7dda;
+        background-color: #1986df;
+    }
+    form input[type=text]{
+        width: auto;
+        font-size: 0.8rem;
+    }
+    .btn-filtres{
+        font-size: 0.8rem;
+        padding-right: 15px;
+    }
+    .btn-filtres .fas{
+        margin-right: 5px;
     }
     /*HEBERGEMENTS*/
     .hebergement{
@@ -576,11 +586,11 @@ form input:placeholder-shown {
     }
     .activities1, .activities2{
         display: flex;
-        flex-flow: row wrap ;
+        flex-flow: row wrap;
         width: 100%;
         flex-grow: 1; 
-        padding: 10px;
         height: auto;
+        padding: 0;
    }
     .single, .double{
         width: 300px;
@@ -612,6 +622,7 @@ form input:placeholder-shown {
     .double .activities__card{
         height: auto;
         flex-grow: 1;
+        flex-shrink: 1;
     }
     .double .activities_card-img{
         height: 150px;
@@ -620,7 +631,7 @@ form input:placeholder-shown {
         height: 30px;
     }
     .activities1 .first{
-        width: 300px;
+        width: auto;
         height: auto;
         flex-grow: 1;
     }
@@ -629,7 +640,7 @@ form input:placeholder-shown {
         flex-grow: 1;
     }
     .activities1 .second{
-        width: 300px;
+        width: auto;
         height: auto;
         flex-grow: 1;
     }
@@ -649,8 +660,8 @@ form input:placeholder-shown {
 /*////////////////////////////////////////*/
 
 @media all and (min-width: 465px) and (max-width: 1023px){
-    body{
-        margin: auto;
+    .container{
+        margin: 0 auto;
         font-size: 0.8rem;
         width: 95%;
     }
@@ -715,6 +726,7 @@ form input:placeholder-shown {
     }
     .hebergement{
         flex-direction: row;
+        margin-bottom: 20px;
     }
     .hebergement-results{
         width: 50%;
@@ -738,6 +750,7 @@ form input:placeholder-shown {
     .activities{
         flex-direction: column;
         height: auto;
+        margin-top: 0;
     }
     .activities1{
         display: flex;
@@ -745,7 +758,7 @@ form input:placeholder-shown {
         height: 100%;
         width: 100%;
         justify-content: space-between;
-        margin: 20px 0;
+        margin-bottom: 20px;
         flex-shrink: 1;
     }
     .activities2{
