@@ -616,6 +616,7 @@ form input:placeholder-shown {
         flex-grow: 1; 
         height: auto;
         padding: 0;
+        margin-bottom: 20px;
    }
     .single, .double{
         width: 300px;
